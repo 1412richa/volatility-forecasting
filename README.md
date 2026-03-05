@@ -8,11 +8,11 @@ Forecast and compare volatility models (ARIMA, GARCH, ML) on S&P 500 returns.
 - VIX (Yahoo Finance)
 
 ## Project Structure
-- `data/' -> raw and processed data
-- `notebooks/' -> exploratory and modeling notebooks
-- `src/' -> reusable scripts (loading, preprocessing, models)
-- `README.md' -> project overview
-- `requirements.txt' -> Python packages
+- `data/` -> raw and processed data
+- `notebooks/` -> exploratory and modeling notebooks
+- `src/` -> reusable scripts (loading, preprocessing, models)
+- `README.md` -> project overview
+- `requirements.txt` -> Python packages
 
 ## Methodology
 1. Data cleaning & exploration
@@ -25,3 +25,15 @@ Forecast and compare volatility models (ARIMA, GARCH, ML) on S&P 500 returns.
 
 ## Key Insights
 Under Construction
+
+## Environment Setup
+```bash
+git clone
+https://github.com/1412richa/volatility-forecasting.git
+cd volatility-forecasting
+
+python -m venv .venv
+source venv\Scripts\activate
+
+pip install -r requirements.txt
+```
