@@ -9,6 +9,7 @@ cycler==0.12.1
 fonttools==4.61.1
 frozendict==2.4.7
 idna==3.4
+ipykernel==6.28.0
 kiwisolver==1.4.9
 matplotlib==3.10.8
 multitasking==0.0.12
@@ -16,7 +17,6 @@ numpy==2.4.2
 packaging==26.0
 pandas==3.0.1
 patsy==1.0.2
-pdftables-api==2.0.0
 peewee==4.0.1
 pillow==12.1.1
 platformdirs==4.9.4
