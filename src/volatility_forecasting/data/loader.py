@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 from pathlib import Path
 
-DATA_DIR = Path("data")
+DATA_DIR = Path.cwd().parent.absolute().joinpath("data")
 
 def download_price_data(ticker: str, start: str = "2000-01-01") -> pd.DataFrame:
     """
