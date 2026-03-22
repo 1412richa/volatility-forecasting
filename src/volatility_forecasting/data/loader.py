@@ -41,6 +41,11 @@ def download_price_data(ticker: str, start: str = "2000-01-01") -> pd.DataFrame:
         df = df[[price_col]]
         df.rename(columns={price_col: "price"}, inplace=True)
 
+        # Reindex to frequency and sort by date
+        df = pd.to_datetime(df.index)
+        df.index.freq = pd.infer_freq(df.index)
+        # df = df.asfreq("B").sort_index()
+
         df.to_csv(file_path)
 
 
